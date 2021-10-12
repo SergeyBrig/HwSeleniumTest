@@ -23,7 +23,6 @@ public class HwSeleniumTest {
 
             driver1.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver1.manage().window().maximize();
-
     }
 
     @AfterMethod
@@ -33,7 +32,6 @@ public class HwSeleniumTest {
 
     @Test
     public void hwTest() {
-
 
             driver1.get("https://toywiz.com/login.php");
 
@@ -49,8 +47,6 @@ public class HwSeleniumTest {
             WebElement error = driver1.findElement(By.cssSelector(".alertBox-message"));
 
             Assert.assertEquals(error.getText(), "Your email address or password is incorrect. Please try again. If you've forgotten your sign in details, just click the 'Forgot your password?' link below.");
-
-
 
     }
 
