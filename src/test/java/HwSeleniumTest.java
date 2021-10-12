@@ -64,8 +64,6 @@ public class HwSeleniumTest {
         sendMail.sendKeys("as1t@gmail.com");
         signUp.click();
 
-
-
         Assert.assertEquals(driver1.getCurrentUrl(), "https://toywiz.com/subscribe.php?result=success");
     }
 }
